@@ -20,33 +20,33 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1 style="color:red">Muhamad Ananda Putra Pratama</h1>
+        <!-- ucapan -->
+        <div>
+         <table style="float:center">
+           <tbody>
+             <tr>
+               <td id="date"></td>
+               <td>&nbsp;</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+       <script type="text/javascript">
+            if (new Date().getHours() < 10) {
+                document.getElementById("date").innerHTML = " Good Morning, lets do something."
+            }
+            else if (new Date().getHours() < 18) {
+                document.getElementById("date").innerHTML = "Good Day Guys"
+            }
+            else {
+              document.getElementById("date").innerHTML = "Hay, Good Evening"
+            }
+          </script>
+          <!-- Finish -->
+        <p><h1 style="color:red">Muhamad Ananda Putra Pratama</h1></p>
         <p>Let's Work, and Just Do It!</p>
       </div>
     </div>
-    <!-- ucapan -->
-    <div>
-     <table style="float:right">
-       <tbody>
-         <tr>
-           <td id="date"></td>
-           <td>&nbsp;</td>
-         </tr>
-       </tbody>
-     </table>
-   </div>
-   <script type="text/javascript">
-        if (new Date().getHours() < 10) {
-            document.getElementById("date").innerHTML = " Good Morning, lets do something."
-        }
-        else if (new Date().getHours() < 18) {
-            document.getElementById("date").innerHTML = "Good Day Guys"
-        }
-        else {
-          document.getElementById("date").innerHTML = "Hay, Good Evening"
-        }
-      </script>
-      <!-- Finish -->
     <div class="container">
       <div class="row">
         <div class="col-sm-4" style="background: url(./img/fasilkom.png)">
