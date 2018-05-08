@@ -14,6 +14,7 @@
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -57,14 +58,38 @@
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
         </div>
       </div>
+      <!-- Link-->
       <p><a href ="diriku.html"><h5><style="text-align:right">Diriku.</a></h5>
-
+        <!-- Footer -->
       <div class="row">
         <div class="col-sm-12" style="text-align:center; background-color:#696969; color:#fff">
           Copyright &copy; anandaputra_ 2018
         </div>
       </div>
     </div>
+
+    <!-- ucapan -->
+    <div>
+     <table style="float:right">
+       <tbody>
+         <tr>
+           <td id="date"></td>
+           <td>&nbsp;</td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+   <script type="text/javascript">
+        if (new Date().getHours() < 10) {
+            document.getElementById("date").innerHTML = " Good Morning, lets do something."
+        }
+        else if (new Date().getHours() < 18) {
+            document.getElementById("date").innerHTML = "Good Day Guys"
+        }
+        else {
+          document.getElementById("date").innerHTML = "Good Evening"
+        }
+      </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
