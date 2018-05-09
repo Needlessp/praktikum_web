@@ -17,6 +17,12 @@
   </head>
 
   <body>
+    <!--chartloader-->
+    <script src="./js/chartloader.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
     <div class="container">
       <div class="jumbotron">
@@ -25,7 +31,7 @@
       </div>
     </div>
     <h2 class="text-center text-uppercase text-secondary mb-0">About Me.</h2>
-        <hr class="star-dark mb-5">
+    <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-sm-12">
           <center><h5>Muhamad Ananda Putra Pratama</center></h5>
@@ -35,6 +41,35 @@
           <p><h5> Universitas Narotama Surabaya </h5></p>
           </div>
         </div>
+
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Work', 8],
+  ['Eat', 2],
+  ['TV', 4],
+  ['Gym', 2],
+  ['Sleep', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
 <a href="index2.html">Back Home < </a>
     <div class="row">
       <div class="col-sm-12" style="text-align:center; background-color:#696969; color:#fff">
